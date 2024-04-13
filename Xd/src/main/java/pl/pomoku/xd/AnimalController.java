@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/v1/animal")
+@RequestMapping(value = "/api/v1")
 @RequiredArgsConstructor
 public class AnimalController {
     private final AnimalRepository animalRepository;
