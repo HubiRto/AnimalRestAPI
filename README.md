@@ -29,3 +29,5 @@ Projekt zawiera również testy API w formacie .http, które mogą być użyte w
 #### Uwagi
 
 Upewnij się, że posiadasz dostęp do bazy danych MySQL oraz skonfigurowałeś odpowiednio połączenie w pliku appsettings.json.
+
+PS: Jak ktoś chce zoabczyć jak w normlanym Freeamworku się robi takie rzeczy to niech znajdzie ukryty moduł ;)
