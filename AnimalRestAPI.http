@@ -1,0 +1,52 @@
+### Test 1: Pobieranie listy zwierząt
+
+GET {{AnimalRestAPI_HostAddress}}/animal/all
+Accept: application/json
+
+### Test 2: Pobieranie informacji o konkretnym zwierzęciu
+
+GET {{AnimalRestAPI_HostAddress}}/animal/1
+Accept: application/json
+
+### Test 3: Dodawanie nowego zwierzęcia
+
+POST {{AnimalRestAPI_HostAddress}}/animal/add
+Content-Type: application/json
+
+{
+  "Name": "Nowe zwierzę",
+  "Category": 1,
+  "Breed": "Nowa rasa",
+  "Color": "Nowy kolor"
+}
+
+### Test 4: Edycja istniejącego zwierzęcia
+
+PUT {{AnimalRestAPI_HostAddress}}/animal/1
+Content-Type: application/json
+
+{
+  "Name": "Nowa nazwa",
+  "Category": 2,
+  "Breed": "Nowa rasa",
+  "Color": "Nowy kolor"
+}
+
+### Test 5: Usuwanie istniejącego zwierzęcia
+
+DELETE {{AnimalRestAPI_HostAddress}}/animal/1
+
+### Test 6: Dodawanie nowej wizyty dla zwierzęcia o Id równym 1
+
+POST {{AnimalRestAPI_HostAddress}}/animal/1/visit/add
+Content-Type: application/json
+
+{
+  "VisitDate": "2024-04-13T12:00:00",
+  "Description": "Nowa wizyta u weterynarza"
+}
+
+### Test 7: Pobieranie listy wizyt dla zwierzęcia o Id równym 1
+
+GET {{AnimalRestAPI_HostAddress}}/animal/1/visits
+Accept: application/json
